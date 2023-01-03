@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>metadata_viewer</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <Nullable>enable</Nullable>
+    <Authors>Joshua Blömer</Authors>
+    <Company>Joshua Blömer</Company>
+    <Product>Metadata Viewer</Product>
+    <Description>A simple console application that lists all metadata directories and tags of a file.</Description>
+    <Copyright>Copyright © Joshua Blömer 2023</Copyright>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MetadataExtractor" Version="2.7.2" />
+  </ItemGroup>
+
+</Project>
